@@ -7,12 +7,15 @@
 html, body {
 	margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    background-color: orange;
+    max-width: 100%;
 }
 
 
 /* The Header and  title */
 /* full width header fixed to the top of the page */
-/*.head-panel {
+.head-panel {
 	top: 0;
 	left: 0;
 	max-width: 100%;
@@ -20,34 +23,34 @@ html, body {
 	height: 10vh;
     margin: 0 auto 0 auto;
 	position: fixed;
-	padding: 0;*/
+	padding: 0;
 
-	/*display: flex; */
 	/* centering the contents of the element  */
-/*	align-items: center;
-	text-align: center;*/
-	/*justify-content: space-between; */
+	display: flex; 
+	align-items: center;
+	text-align: center;
+	justify-content: space-between; 
 	/* places items at opposite ends */
 
-	/* adding and positioning the background element *//*
+	/* adding and positioning the background element */
 	background-image: url("davies-designs-studio-jxnKcNXxVXA-unsplash.jpg"); 
 	background-position: center center;
-	background-size: cover;*/
-	/*z-index: 10;*/
-/*}*/
+	background-size: cover;
+	z-index: 10;
+}
 
-/*.head-panel h1 {
-	/*margin-right: 5rem;*/
-/*	color: #ffff00;
+.head-panel h1 {
+	margin-right: 5rem;
+	color: #ffff00;
     font: small-caps 700 35px Roboto, Montserrat, "Trebuchet MS", Arial, sans-serif;
 }
-*/
-/*
-.head-panel i {*/
-	/*margin-left: 5rem;*/
- /*   color: #ffff00;
+
+
+.head-panel i {
+	margin-left: 5rem;
+    color: #ffff00;
     font-size: 35px;  
-}*/
+}
 
 .recipes-container {
 	max-width: 90vw;
@@ -61,7 +64,7 @@ html, body {
 .recipes-container .recipes-title {
 	max-width: 84vw;
 	height: 5vh;
-	margin: 0 auto 0 auto; /* centering the h2 tag with a small margin above */
+	margin: 0 auto 0 auto;  /* centering the h2 tag with a small margin above */
 	color: #000;
 	font: 700 1.5rem Roboto, Montserrat, sans-serif;
 	display: flex;
@@ -209,7 +212,7 @@ html, body {
 }
 
 /* full width footer sticking to the bottom of the page */
-/*footer {
+footer {
 	background-color: #dc1e0b;
 	left: 0;
     bottom: 0;
@@ -223,43 +226,73 @@ html, body {
 	align-items: center;
 	justify-content: center;
     text-align: center;
-}*/
+}
 
 /* Expanding the components in the middle to take the full mobile screen */
 /* normal phone size - for example Pixel 2 */
 @media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 414px) and (min-height: 667px) and (max-height: 823px) {
     /* change margin and font size to fit screen */
-    /*.head-panel h1 {*/
-        /*margin-right: 0;*//*
+    .head-panel h1 {
+        margin-right: 0;
         font-size: 20px;
         margin: 0;
-    }*/
+    }
 
-    /*.head-panel i {*/
-        /*margin-left: 0;*/
-/*        font-size: 20px;
+    html {
+    	overflow-x: hidden;
+    }
+
+    body {
+        max-width: 50vw;
+    }
+
+    .head-panel {
+        margin-left: 0;
+        font-size: 20px;
         margin: 0;
-    }*/
+        background-color: green;
+        max-width: 50vw;
+    }
 
     .recipes-container {
 	    margin: 0;
 	    padding: 0;
 	    background-color: blue;
+        max-width: 50vw;
     }
 
     .recipes-container .recipes {
 	    margin: 0;
 	    padding: 0;
+        max-width: 50vw;
     }
 
     .recipes-container .recipes .recipe-item {
         margin: 0;
         padding: 0;
+        background-color: red;
+        max-width: 50vw;
+    }
+
+    .recipes-container .recipes .recipe-item .recipe-positives {
+    	background-color: purple;
+        max-width: 50vw;
+    }
+
+
+    .recipes-container .recipes .recipe-item .recipe-positives li p {
+    	background-color: yellow;
+        max-width: 50vw;
+    }
+
+    footer {
+       background-color: green;    	
+       max-width: 50vw;
     }
 
 }
 
-/* Ipad and Ipad Pro */
+/* Ipad and Ipad Pro 
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) and (max-height: 1366px) {
 
 }

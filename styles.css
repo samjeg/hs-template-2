@@ -1,0 +1,266 @@
+-moz- /* this is use for Firefox browser*/
+-webkit- /*this is use for chrome and safari browsers*/
+-o- /*this is use for opera browser*/
+-ms- /*this is use for Internet Explorer (but not always it's depends on CSS3 browser support)*/
+
+
+html, body {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* The Header and  title */
+/* full width header fixed to the top of the page */
+/*.head-panel {
+	top: 0;
+	left: 0;
+	max-width: 100%;
+    width: 100vw;
+	height: 10vh;
+    margin: 0 auto 0 auto;
+	position: fixed;
+	padding: 0;*/
+
+	/*display: flex; */
+	/* centering the contents of the element  */
+/*	align-items: center;
+	text-align: center;*/
+	/*justify-content: space-between; */
+	/* places items at opposite ends */
+
+	/* adding and positioning the background element *//*
+	background-image: url("davies-designs-studio-jxnKcNXxVXA-unsplash.jpg"); 
+	background-position: center center;
+	background-size: cover;*/
+	/*z-index: 10;*/
+/*}*/
+
+/*.head-panel h1 {
+	/*margin-right: 5rem;*/
+/*	color: #ffff00;
+    font: small-caps 700 35px Roboto, Montserrat, "Trebuchet MS", Arial, sans-serif;
+}
+*/
+/*
+.head-panel i {*/
+	/*margin-left: 5rem;*/
+ /*   color: #ffff00;
+    font-size: 35px;  
+}*/
+
+.recipes-container {
+	max-width: 90vw;
+	margin: 6rem auto 2rem auto;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
+}
+
+.recipes-container .recipes-title {
+	max-width: 84vw;
+	height: 5vh;
+	margin: 0 auto 0 auto; /* centering the h2 tag with a small margin above */
+	color: #000;
+	font: 700 1.5rem Roboto, Montserrat, sans-serif;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.recipes-container .recipes  {
+	list-style: none; /* removes bullet points */
+	max-width: 88vw;
+	margin: 0 auto 2rem auto;
+    padding: 0;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.recipes-container .recipes .recipe-item {
+	float: left;
+    max-width: 84vw;
+    width: 84vw;
+	height: 15vh;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+  	color: #000;
+	display: flex;
+	flex-direction: row; /* lines up the elements horizontally */
+	justify-content: space-between;
+	align-items: center;
+    border-bottom: solid;
+}
+
+.recipes-container .recipes .recipe-item .rcp-img-container {
+	float: left;
+	max-width: 10vw;
+	height: 14vh;
+	display: block;
+}
+
+ .recipes-container .recipes .recipe-item .rcp-img-container .rcp-img {
+	float: left;
+	max-width: 10vw;
+	height: 14vh;
+	display: block;
+}
+
+ .recipes-container .recipes .recipe-item .rcp-health-score-container {
+	float: left;
+	max-width: 26vw;
+	height: 12vh;
+	padding: 0 0.5rem 0.5rem 0.5rem;
+    margin: 0 auto 0 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+ .recipes-container .recipes .recipe-item .rcp-health-score-container .name {
+	float: left;
+	margin: 0 0.5rem 0.5rem 0.1rem;
+	font: 700 1.1rem Roboto, Montserrat, sans-serif;
+	display: block;
+	text-align: left; /* sets text to the start/left of the element */
+}
+
+ .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score {
+	float: left;
+	max-width: 15vw;
+	height: 3vh;
+	margin: 0;
+    padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* list items are set at the begining of this container */
+	justify-content: flex-start;
+}
+
+ .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score li {
+	max-width: 1.5vw;
+	height: 2vw;
+    padding: 0;
+    margin: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score li .fas {
+	float: left;
+	color: yellow;
+    margin: 0;
+	font-size: 1rem;
+	display: inline;
+}
+
+ .recipes-container .recipes .recipe-item .recipe-positives {
+    float: right;
+    list-style: none;
+	max-width: 14vw;
+	height: 14vh;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.recipes-container .recipes .recipe-item .recipe-positives li {
+    float: left;
+    color: green;
+    max-width: 14vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.recipes-container .recipes .recipe-item .recipe-positives li i {
+	float: left;
+	color: green;
+    max-width: 4vw;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+ .recipes-container .recipes .recipe-item .recipe-positives li p {
+	float: left;
+    color: #000;
+    width: 18vw;
+	margin: 0;
+	font: 700 1rem Roboto, Montserrat, sans-serif;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* full width footer sticking to the bottom of the page */
+/*footer {
+	background-color: #dc1e0b;
+	left: 0;
+    bottom: 0;
+	width: 100vw;
+    max-width: 100%;
+	height: 10vh;
+	color: #ffff00;
+	font: 1.5rem Roboto, Montserrat, sans-serif;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+}*/
+
+/* Expanding the components in the middle to take the full mobile screen */
+/* normal phone size - for example Pixel 2 */
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-width: 414px) and (min-height: 667px) and (max-height: 823px) {
+    /* change margin and font size to fit screen */
+    /*.head-panel h1 {*/
+        /*margin-right: 0;*//*
+        font-size: 20px;
+        margin: 0;
+    }*/
+
+    /*.head-panel i {*/
+        /*margin-left: 0;*/
+/*        font-size: 20px;
+        margin: 0;
+    }*/
+
+    .recipes-container {
+	    margin: 0;
+	    padding: 0;
+	    background-color: blue;
+    }
+
+    .recipes-container .recipes {
+	    margin: 0;
+	    padding: 0;
+    }
+
+    .recipes-container .recipes .recipe-item {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Ipad and Ipad Pro */
+@media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) and (max-height: 1366px) {
+
+}
+

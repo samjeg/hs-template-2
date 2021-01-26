@@ -1,0 +1,1 @@
+# hs-template-2

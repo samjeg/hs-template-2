@@ -5,7 +5,7 @@
 .head-panel {
 	top: 0;
 	left: 0;
-	width: 98.8vw;
+	width: 100vw;
 	height: 14vh;
 	position: absolute;
 
@@ -15,7 +15,7 @@
 	justify-content: space-between; /* places items at opposite ends */
 
 	/* adding and positioning the background element */
-	background-image: url("davies-designs-studio-jxnKcNXxVXA-unsplash.jpg"); 
+	background-image: url("./images/davies-designs-studio-jxnKcNXxVXA-unsplash.jpg"); 
 	background-position: center center;
 	background-size: cover;
 	z-index: 10;
@@ -30,8 +30,8 @@
 
 /* title logo */
 .head-panel i {
-    color: #ffff00;
-    font-size: 45px;  
+    color: #ed9121;
+    font-size: 50px;  
 	margin-left: 5rem;
 }
 
@@ -179,7 +179,7 @@ footer {
 	background-color: green;
 	left: 0;
 	bottom: 0;
-    width: 98.8vw;
+    width: 100vw;
 	height: 10vh;
 	color: #ffff00;
 	font: 1.8rem Roboto, Montserrat, sans-serif;

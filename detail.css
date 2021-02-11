@@ -1,5 +1,5 @@
 html {
-    font-family: Roboto, Montserrat, "Trebuchet MS", Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Montserrat, "Trebuchet MS", Arial, sans-serif;
 }
 
 /* The Header and  title */
@@ -44,13 +44,19 @@ article {
 
 article .img {
     float: right;
-    width: 10vw;
-    height: 35vh;
+    width: 100%;
+    max-width: 10vw;
+    height: auto;
+    margin: 0 0 5rem 2rem;
 }
 
 article .img img {
     max-width: 100%;
     height: auto;
+}
+
+article .summary {
+    font-weight: 600;
 }
 
 article .attributes {
@@ -67,16 +73,21 @@ article .attributes h2 {
     font-size: 1.2rem;
 }
 
+article .attributes .prep-time-label {
+    margin: 0.25rem 0.1rem 0 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 article .attributes time {
     margin: 0.25rem auto 0 0.1rem;
     font-weight: 700;
     font-size: 1rem;
 }
 
-article .attributes .prep-time-label {
-    margin: 0.25rem 0.1rem 0 1rem;
+article .attributes .ratings-label {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1rem;   
 }
 
 article .attributes .ratings {
@@ -88,14 +99,10 @@ article .attributes .ratings {
     justify-content: center;   
 }
 
-article .attributes .ratings-label {
-    font-weight: 700;
-    font-size: 1rem;   
-}
-
 article .attributes .ratings .fas {
     color: #ffff00;
 }
+
 article .attributes-2 {
     background-color: #55ab55;
     min-width: 75vw;
@@ -132,9 +139,8 @@ article .attributes-2 li p {
 article .prep-info {
     height: 40vh;
     display: flex;
-    align-items: center
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 article .prep-info .container-2 {
@@ -147,9 +153,28 @@ article .prep-info .container-2 .img-2 {
     height: auto;
 }
 
-article .prep-info .container-ingr {
+article .prep-info .container-instr {
     min-width: 25vw;
     margin: 0 1rem 0 2rem;
+}
+
+article .prep-info .container-instr .label-instr {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 0 -1rem;
+}
+
+article .prep-info .container-instr .instructions {
+    list-style: square;
+    margin: 0.5rem 0 0 0;
+}
+
+article .prep-info .container-instr .instructions li { 
+    margin-bottom: 0.4rem;
+}
+
+article .prep-info .container-ingr {
+    min-width: 25vw;
 }
 
 article .prep-info .container-ingr .label-ingr {
@@ -167,27 +192,6 @@ article .prep-info .container-ingr .ingredients li {
     margin-bottom: 0.4rem;
 }
 
-
-article .prep-info .container-instr {
-    min-width: 25vw;
-    margin-bottom: 20rem;
-}
-
-article .prep-info .container-instr .label-instr {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin: 0 0 0 -1rem;
-}
-
-article .prep-info .container-instr .instructions {
-    list-style: square;
-    margin: 0.5rem 0 0 0;
-}
-
-article .prep-info .container-instr .instructions li { 
-    margin-bottom: 0.4rem;
-}
-
 /* full width footer sticking to the bottom of the page */
 footer {
 	background-color: #55ab55;
@@ -196,7 +200,7 @@ footer {
     width: 100vw;
 	height: 10vh;
 	color: #ffff33;
-	font: 1.8rem Roboto, Montserrat, sans-serif;
+	font: 1.4rem Roboto, Montserrat, sans-serif;
 	position: relative;
 	display: flex;
 	text-align: center;
@@ -242,14 +246,109 @@ footer {
 /* Expanding the components in the middle to take the full mobile screen */
 /* normal phone size - for example Pixel 2 */
 @media screen and (orientation: portrait) and (min-width: 375px) and  (max-width: 414px) and (min-height: 667px) and (max-height: 823px) {
+    .head-panel i {
+        font-size: 30px;
+        margin-left: 2rem;
+    }
+    
     .head-panel h1 {
-	    font-size: 30px;
-	    margin-right: 1rem;
+        font-size: 35px;
+        margin-right: 2rem;
+    }
+    article .attributes {
+        justify-content: flex-start;
+    }
+    
+    article .attributes h2 {
+        font-size: 1rem;
+        margin-left: 0.05rem;
     }
 
-    .head-panel i {
-    	font-size: 30px;
-    	margin-left: 1rem;
+    article .attributes .prep-time-label {
+        font-size: 0.8rem;
+        margin: 0.25rem 0 0 0.5rem;
+    }
+
+    article .attributes time {
+        font-size: 0.8rem;
+        margin: 0 auto 0 0.15rem;
+    }
+
+    article .attributes .ratings-label {
+        width: 10vw;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    article .attributes .ratings {
+        width: 20vw;
+    }
+
+    article .attributes .ratings .fas {
+        font-size: 0.8rem;
+    }
+
+    article .attributes-2 {
+        height: 5vh;
+        margin: 2rem auto 2rem auto;
+    }
+
+    article .attributes-2 li {
+        width: 11vw;
+        height: 3.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article .attributes-2 li i {
+        color: #ffff33; /* light yellow*/
+        font-size: 1.3rem;
+    }
+
+    article .attributes-2 li p {
+        color: #ffff33; /* light yellow*/
+        font-size: 0.5rem;
+        font-weight: 600;
+        margin-right: 0.2rem;
+    }
+
+    article .img {
+        width: 100%;
+        max-width: 35vw;
+        height: auto;
+        margin-left: 1rem;
+    }
+
+    article .summary {
+        font-size: 0.8rem;
+    }
+
+    article .prep-info {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    article .prep-info .container-2 {
+        width: 100%;
+        max-width: 75vw;
+        height: auto;
+        margin:0 0 2rem 0;
+    }
+
+    article .prep-info .container-ingr {
+        height: auto;
+        margin:0 auto 2rem 2rem;      
+    }
+
+    article .prep-info .container-instr {
+        height: auto;
+        margin:0 auto 2rem 2rem;
+    }
+
+    footer {
+        position: relative;
     }
 }
 /* Tall phones like the iphone X */
@@ -267,14 +366,109 @@ footer {
 
 /* old school phones(Iphone 5) */
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 360px) and (max-height: 736px) {    
-    .head-panel h1 {
-        font-size: 30px;
-        margin-right: 1rem;
-    }
-
     .head-panel i {
         font-size: 30px;
+        margin-left: 2rem;
+    }
+    
+    .head-panel h1 {
+        font-size: 35px;
+        margin-right: 2rem;
+    }
+    article .attributes {
+        justify-content: flex-start;
+    }
+    
+    article .attributes h2 {
+        font-size: 1rem;
+        margin-left: 0.05rem;
+    }
+
+    article .attributes .prep-time-label {
+        font-size: 0.8rem;
+        margin: 0.25rem 0 0 0.5rem;
+    }
+
+    article .attributes time {
+        font-size: 0.8rem;
+        margin: 0 auto 0 0.15rem;
+    }
+
+    article .attributes .ratings-label {
+        width: 10vw;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    article .attributes .ratings {
+        width: 20vw;
+    }
+
+    article .attributes .ratings .fas {
+        font-size: 0.8rem;
+    }
+
+    article .attributes-2 {
+        height: 5vh;
+        margin: 2rem auto 2rem auto;
+    }
+
+    article .attributes-2 li {
+        width: 11vw;
+        height: 3.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article .attributes-2 li i {
+        color: #ffff33; /* light yellow*/
+        font-size: 1.3rem;
+    }
+
+    article .attributes-2 li p {
+        color: #ffff33; /* light yellow*/
+        font-size: 0.5rem;
+        font-weight: 600;
+        margin-right: 0.2rem;
+    }
+
+    article .img {
+        width: 100%;
+        max-width: 35vw;
+        height: auto;
         margin-left: 1rem;
+    }
+
+    article .summary {
+        font-size: 0.8rem;
+    }
+
+    article .prep-info {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    article .prep-info .container-2 {
+        width: 100%;
+        max-width: 75vw;
+        height: auto;
+        margin:0 0 2rem 0;
+    }
+
+    article .prep-info .container-ingr {
+        height: auto;
+        margin:0 auto 2rem 2rem;      
+    }
+
+    article .prep-info .container-instr {
+        height: auto;
+        margin:0 auto 2rem 2rem;
+    }
+
+    footer {
+        position: relative;
     }	
 }
 

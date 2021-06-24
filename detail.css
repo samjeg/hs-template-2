@@ -109,10 +109,10 @@ article .attributes .ratings .fas {
 }
 
 article .attributes-2 {
-    background-color: #55ab55;
     min-width: 75vw;
     height: 8vh;
     margin: 2rem auto 2rem auto;
+    border: 0.4rem solid #ffff33;
 
     /* spreading list elements evenly accross the page */
     display: flex;
@@ -128,14 +128,26 @@ article .attributes-2 li {
     justify-content: center;
 }
 
+article .attributes-2 .freezable {
+    color: #b0c4de;
+}
+
+article .attributes-2 .vegetarian {
+    color: #32cd32;
+}
+
+article .attributes-2 .serves {
+    color: #c0c0c0;
+}
+
 article .attributes-2 li i {
-    color: #ffff33; /* light yellow*/
-    font-size: 2rem;
+    /*color: #ffff33;  light yellow*/
+    font-size: 1.5rem;
 }
 
 article .attributes-2 li p {
-    color: #ffff33; /* light yellow*/
-    font-size: 1rem;
+    /*color: #ffff33;  light yellow*/
+    font-size: 1.5rem;
     font-weight: 600;
     margin-right: 0.3rem;
 }

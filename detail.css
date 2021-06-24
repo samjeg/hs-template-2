@@ -68,6 +68,10 @@ article .attributes {
     justify-content: space-between;
 }
 
+article .attributes {
+    
+}
+
 article .attributes h2 {
     margin-left: 0.2rem;
     font-weight: 700;

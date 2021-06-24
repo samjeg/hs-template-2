@@ -88,7 +88,7 @@
  	float: left;
 	width: 10vw;
 	height: 14.5vh;
-	display: block;
+	display: block
 }
 
 .recipes-container .recipes .recipe-item .rcp-health-score-container {
@@ -104,7 +104,7 @@
 .recipes-container .recipes .recipe-item .rcp-health-score-container .name {
 	float: left;
 	margin: 0 0.5rem 1rem 0.2rem;
-	font: 700 1.3rem rem Roboto, Montserrat, sans-serif;
+	font: 700 1.3rem Roboto, Montserrat, sans-serif;
 	display: block;
 	text-align: left; /* sets text to the start/left of the element */
 }
@@ -137,12 +137,12 @@
 
 .recipes-container .recipes .recipe-item .recipe-positives {
     float: left;
-	width: 9vw;
+	width: 12vw;
 	height: 14.5vh;
     margin-left: 0;
 	padding: 0.5rem;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; 
 }
 
 .recipes-container .recipes .recipe-item .recipe-positives li {

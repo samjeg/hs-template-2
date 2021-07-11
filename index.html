@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <!-- allows the page to responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
 
         <!-- font awesome cdn -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -27,6 +27,38 @@
             <!-- title of ul -->
             <h2 class="recipes-title">Recipes</h2>
             <ul class="recipes">
+                <li class="recipe-item">
+                    <div class="rcp-img-container">
+                        <img class="rcp-img" alt="healthy food" src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg">
+                    </div>
+
+                    <div class="rcp-health-score-container">
+                        <p class="name">Meditaranean Salad</p>
+
+                        <ul class="health-score">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>      
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>          
+                        </ul>
+                    </div>
+
+                    <ul class="recipe-positives">
+                        <li class="vegetarian">
+                            <i class="fas fa-check"></i>
+                            <p>Vegetarian</p>
+                        </li>
+                        <li class="vegan">
+                            <i class="fas fa-check"></i>
+                            <p>Vegan</p>
+                        </li>
+                        <li class="gluten-free">
+                            <i class="fas fa-check"></i>
+                            <p>Gluten Free</p>
+                        </li>
+                    </ul>
+                </li>
                 <li class="recipe-item">
                     <div class="rcp-img-container">
                         <img class="rcp-img" alt="healthy food" src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg">
@@ -123,39 +155,7 @@
                         </li>
                     </ul>
                 </li>
-                                <li class="recipe-item">
-                    <div class="rcp-img-container">
-                        <img class="rcp-img" alt="healthy food" src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg">
-                    </div>
-
-                    <div class="rcp-health-score-container">
-                        <p class="name">Meditaranean Salad</p>
-
-                        <ul class="health-score">
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>      
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>
-                            <li><i class="fas fa-star"></i></li>          
-                        </ul>
-                    </div>
-
-                    <ul class="recipe-positives">
-                        <li class="vegetarian">
-                            <i class="fas fa-check"></i>
-                            <p>Vegetarian</p>
-                        </li>
-                        <li class="vegan">
-                            <i class="fas fa-check"></i>
-                            <p>Vegan</p>
-                        </li>
-                        <li class="gluten-free">
-                            <i class="fas fa-check"></i>
-                            <p>Gluten Free</p>
-                        </li>
-                    </ul>
-                </li>
-                                <li class="recipe-item">
+                        <li class="recipe-item">
                     <div class="rcp-img-container">
                         <img class="rcp-img" alt="healthy food" src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg">
                     </div>
@@ -192,7 +192,7 @@
         <footer>  
             <p>By Samuel Jegede</p> 
         </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><!-- jquery cdn comes before the javascript -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="./script.js"></script>
     </body>
 </html>

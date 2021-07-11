@@ -1,17 +1,15 @@
-
 $(document).ready(function(){
-	// getting number of items in the recipes list 
 	$recipes = $(".recipes .recipe-item");
-	$recipes_size = $recipes.length;
+	$recipes_length = $recipes.length;
 	$footer = $("footer");
 
-    /* fixes the footer to the bottom of the page making sure
-    not to overlap the content */
-    if ($recipes_size > 4) {
-    	$footer.css("position", "relative");
+	if ($recipes_length > 3) {
+		$footer.css("position", "relative");
+	} else {
+		$footer.css("position", "fixed");
+	}
 
-    } else {
-    	$footer.css("position", "fixed");
-    }
+	if ($recipes_length > 1) {
+		$(".recipes .recipe-item:last-child").css("border-bottom", "hidden");
+	}
 });
-

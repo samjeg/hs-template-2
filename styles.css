@@ -35,7 +35,6 @@
 	margin-left: 5rem;
 }
 
-
 .recipes-container {
 	width: 60vw;
 	margin: 6rem auto 0 auto; /* margin at the top to push down the container so the contents in the container are not hiddden by the header */
@@ -50,9 +49,10 @@
 	color: #000;
 	width: 54vw;
 	height: 5vh;
-	margin: 0.5rem 0 0 0; /* centering the h2 tag with a small margin above */
+	margin: 0.5rem 0 -0.5rem 0; /* centering the h2 tag with a small margin above */
 	font: 700 2.0rem Roboto, Montserrat, sans-serif;
 	display: flex;
+    z-index: 10;
 }
 
 .recipes-container .recipes  {
@@ -86,8 +86,8 @@
 
 .recipes-container .recipes .recipe-item .rcp-img-container .rcp-img {	
  	float: left;
-	width: 10vw;
-	height: 14.5vh;
+	width: 9.5vw;
+	height: 14vh;
 	display: block
 }
 
@@ -137,7 +137,7 @@
 
 .recipes-container .recipes .recipe-item .recipe-positives {
     float: left;
-	width: 12vw;
+	width: 8.5vw;
 	height: 14.5vh;
     margin-left: 0;
 	padding: 0.5rem;
@@ -146,9 +146,9 @@
 }
 
 .recipes-container .recipes .recipe-item .recipe-positives li {
-	width: 11vw;
+	width: 8vw;
 	height: 5vh;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	display: flex;
 	align-items: center;
 }
@@ -157,7 +157,7 @@
 .recipes-container .recipes .recipe-item .recipe-positives li i {
 	float: left;
 	color: green;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin: 0;
 	display: flex;
 	justify-content: center;
@@ -168,7 +168,7 @@
 /*  label for recipe positive */
 .recipes-container .recipes .recipe-item .recipe-positives li p {
 	float: left;
-	font: 700 1.2rem Roboto, Montserrat, sans-serif;
+	font: 700 1rem Roboto, Montserrat, sans-serif;
 	margin-left: 0.5rem;
 	display: flex;
 	align-items: center;
@@ -191,7 +191,7 @@ footer {
 }
 
 
-/* Ipad and Ipad Pro */
+/* Ipad */
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1366px) and (max-height: 1366px) {
     .head-panel h1 {
         font-size: 45px;
@@ -204,7 +204,7 @@ footer {
     }
 
     .recipes-container {
-        width: 95vw;    /* incresed width so content fits mobile screen */
+        width: 95vw;    /* increased width so content fits mobile screen */
         margin-top: 8rem;
     }
 
@@ -213,7 +213,7 @@ footer {
     }
 
     .recipes-container .recipes-title {
-        margin-right: 18rem;
+        margin: 1rem 18rem -2rem 0;
     }
 
     .recipes-container .recipes .recipe-item {
@@ -227,12 +227,12 @@ footer {
     }
 
     .recipes-container .recipes .recipe-item .rcp-img-container .rcp-img {
-        width: 24vw;
-        height: 12vh;
+        width: 23vw;
+        height: 11.5vh;
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container {
-        width: 22vw;
+        width: 30vw;
         height: 12vh;
     }
 
@@ -241,14 +241,13 @@ footer {
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score {
-        width: 25vw;
+        width: 23vw;
         height: 3vh;
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score li {
-        width: 4vw;
-        height: 4vw;
-
+        width: 3.1vw;
+        height: 3.1vw;
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container .health-score li .fas {
@@ -257,12 +256,12 @@ footer {
 
 
     .recipes-container .recipes .recipe-item .recipe-positives {
-        width: 22vw;
+        width: 18vw;
         height: 12vh;
     }
 
-    .recipes-container .recipes .recipe-item .recipe-positives  li {
-        width: 22vw;
+    .recipes-container .recipes .recipe-item .recipe-positives li {
+        width: 17vw;
         height: 3vh;
         margin-bottom: 0.5rem;
     }
@@ -311,8 +310,8 @@ footer {
     }
 
     .recipes-container .recipes .recipe-item .rcp-img-container .rcp-img {
-        width: 24vw;
-        height: 12vh;
+        width: 23vw;
+        height:11.5vh;
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container {

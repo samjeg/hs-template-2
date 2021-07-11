@@ -254,7 +254,6 @@ footer {
         font-size: 1.2rem;
     }
 
-
     .recipes-container .recipes .recipe-item .recipe-positives {
         width: 18vw;
         height: 12vh;
@@ -277,7 +276,7 @@ footer {
 
 /* Surface Duo */
 @media screen and (orientation: portrait) and (width: 540px) and (height: 720px)  {
-.head-panel h1 {
+    .head-panel h1 {
         font-size: 38px;
         margin-right: 2rem;
     }
@@ -296,7 +295,8 @@ footer {
     }
 
     .recipes-container .recipes-title {
-        margin-right: 12rem;
+        margin: 0 12.5rem -1.35rem 0;
+        font-size: 1.75rem;
     }
 
     .recipes-container .recipes .recipe-item {
@@ -311,7 +311,7 @@ footer {
 
     .recipes-container .recipes .recipe-item .rcp-img-container .rcp-img {
         width: 23vw;
-        height:11.5vh;
+        height: 11.5vh;
     }
 
     .recipes-container .recipes .recipe-item .rcp-health-score-container {
@@ -341,7 +341,7 @@ footer {
 
 
     .recipes-container .recipes .recipe-item .recipe-positives {
-        width: 22vw;
+        width: 18vw;
         height: 12vh;
     }
 
@@ -382,7 +382,8 @@ footer {
     }
 
     .recipes-container .recipes-title {
-        margin-right: 7rem;
+        margin: 1rem 7.5rem -2rem 0;
+        font-size: 1.35rem;
     }
 
     .recipes-container .recipes .recipe-item {
@@ -420,7 +421,7 @@ footer {
     }
 
     .recipes-container .recipes .recipe-item .recipe-positives {
-        width: 25vw;
+        width: 18vw;
         height: 12vh;
     }
 
